@@ -54,7 +54,7 @@ Check out the live demo: [Developer's Life Simulator](https://andradehenrique.gi
 
 ```bash
 # Clone this repository
-git clone https://github.com/yourname/dev-life-simulator.git
+git clone https://github.com/andradehenrique/dev-life-simulator.git
 
 # Navigate into the project
 cd dev-life-simulator
