@@ -58,6 +58,23 @@ body {
     width: 100%;
 }
 
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    margin-right: auto; /* This pushes the other elements to the right */
+}
+
+.github-link:hover {
+    transform: scale(1.1);
+}
+
+.github-icon {
+    fill: var(--text-color);
+    transition: fill 0.3s;
+}
+
 .language-selector {
     padding: 8px 12px;
     border-radius: 5px;
