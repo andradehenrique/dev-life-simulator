@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const message = document.querySelector('.message');
     const themeToggle = document.getElementById('theme-toggle');
     const languageSelector = document.getElementById('language-selector');
+    const metaDescription = document.querySelector('meta[name="description"]');
     
     // Array to store the order of activated switches
     let activatedSwitches = [];
@@ -22,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
             message2: 'Boa escolha, você está no caminho certo!',
             message3: 'Você está a um passo do sucesso!',
             message4: 'Ops, você falhou com sucesso, tente novamente!',
-            footer: '© 2025 | A vida de um desenvolvedor em uma página'
+            footer: '© 2025 | A vida de um desenvolvedor em uma página',
+            description: 'Você pode ter tudo? Um simulador simples mostrando o trilema do desenvolvedor: escolha entre trabalhar com TI, ganhar dinheiro e sanidade mental - mas você só pode escolher dois!'
         },
         'en': {
             title: 'Developer\'s Life Simulator',
@@ -33,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
             message2: 'Good choice, you\'re on the right path!',
             message3: 'You\'re one step away from success!',
             message4: 'Oops, you successfully failed, try again!',
-            footer: '© 2025 | A developer\'s life in one page'
+            footer: '© 2025 | A developer\'s life in one page',
+            description: 'Can you have it all? A simple simulator showing the developer\'s trilemma: choose between working in IT, making money, and mental sanity - but you can only pick two!'
         },
         'es': {
             title: 'Simulador de Vida de un Desarrollador',
@@ -44,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
             message2: '¡Buena elección, estás en el camino correcto!',
             message3: '¡Estás a un paso del éxito!',
             message4: '¡Ups, fallaste con éxito, inténtalo de nuevo!',
-            footer: '© 2025 | La vida de un desarrollador en una página'
+            footer: '© 2025 | La vida de un desarrollador en una página',
+            description: '¿Puedes tenerlo todo? Un simulador simple que muestra el trilema del desarrollador: elige entre trabajar en TI, ganar dinero y salud mental, ¡pero solo puedes elegir dos!'
         }
     };
     
@@ -64,6 +68,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.switch-container p')[1].textContent = translations[lang].money;
         document.querySelectorAll('.switch-container p')[2].textContent = translations[lang].sanity;
         document.querySelector('footer p').textContent = translations[lang].footer;
+        
+        // Update the meta description
+        metaDescription.setAttribute('content', translations[lang].description);
         
         // Update the document title to match the selected language
         document.title = translations[lang].title;
