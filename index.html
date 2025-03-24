@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Realidade de TI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="top-controls">
+            <select id="language-selector" class="language-selector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="pt-BR">Português</option>
+            </select>
+            
+            <label class="switch theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <div class="main-content">
+            <div class="container">
+                <h1>Developer's Life Simulator</h1>
+                <div class="switches">
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="work">
+                            <span class="slider"></span>
+                        </label>
+                        <p>Work in IT</p>
+                    </div>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="money">
+                            <span class="slider"></span>
+                        </label>
+                        <p>Make Money</p>
+                    </div>
+                    <div class="switch-container">
+                        <label class="switch">
+                            <input type="checkbox" id="sanity">
+                            <span class="slider"></span>
+                        </label>
+                        <p>Mental Sanity</p>
+                    </div>
+                </div>
+                <p class="message">Choose wisely!</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 | A developer\'s life in one page</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
