@@ -86,7 +86,7 @@ Want to contribute? Here's how:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/existential-crisis`)
-3. Commit your changes (`git commit -m 'Added more depressing reality`)
+3. Commit your changes (`git commit -m 'Added more depressing reality'`)
 4. Push to the branch (`git push origin feature/existential-crisis`)
 5. Open a Pull Request
 6. Wait for someone to review it (probably while they're supposed to be sleeping)
